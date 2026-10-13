@@ -1,0 +1,70 @@
+#card {
+    height: 350px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 6px black;
+    border-radius: 10px;
+}
+
+.image-card {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.save-btn{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    transform: translateY(-100px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.save-btn button {
+    background-color: white;
+    border-radius: 26px;
+    padding:12px;
+}
+
+#card:hover .save-btn {
+transform: translateY(0);
+}
+
+#bottom-actions {
+    width: 100%;
+position: absolute;
+bottom: 10px;
+transform: translateY(100px);
+transition: transform 0.3s ease-in-out;
+text-align: center;
+}
+
+#card:hover #bottom-actions{
+    transform: translateY(0);
+}
+
+#bottom-actions button {
+display: inline-block;
+background-color:white ;
+border-radius: 26px;
+padding:12px;
+width: 150px;
+vertical-align: middle;
+}
+
+#bottom-actions button:not(:first-child) {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    padding: 0 ;
+    line-height: 42px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
